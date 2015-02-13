@@ -1,5 +1,12 @@
 import glob
 
+"""
+Some linux desktop environments do not provide choosing a slideshow 
+(set of images in sequence) in an easy way. This little script can
+help in this situation generating a XML that can be used as Wallpaper.
+It uses all the images that belong to a given path.
+"""
+
 def generate_slideshow(directory, dur_img, dur_trans):
     if directory[-1] == '/':
         directory = directory[:-1]
@@ -8,7 +15,7 @@ def generate_slideshow(directory, dur_img, dur_trans):
 
     string = '<background>\n\
                 \t<starttime>\n\
-                    \t\t<year>2014</year>\n\
+                    \t\t<year>2015</year>\n\
                     \t\t<month>01</month>\n\
                     \t\t<day>01</day>\n\
                     \t\t<hour>00</hour>\n\
