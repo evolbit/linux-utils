@@ -1,0 +1,10 @@
+host myvps
+hostname <IP>
+user <user>
+port 22000
+LocalForward 2222 localhost:2222
+
+host rpi3
+hostname localhost
+user root
+port 2222
